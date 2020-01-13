@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <meta name="assets-path" content="{{ route('voyager.voyager_assets') }}"/>
-
+    <script src="https://cdn.tiny.cloud/1/nfvfi9pmbcs3pd01vgk861onkrm9nwrcdmtajgissaxfpn1x/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
@@ -115,7 +115,6 @@ if (\Illuminate\Support\Str::startsWith(Auth::user()->avatar, 'http://') || \Ill
 @include('voyager::partials.app-footer')
 
 <!-- Javascript Libs -->
-
 
 <script type="text/javascript" src="{{ voyager_asset('js/app.js') }}"></script>
 
